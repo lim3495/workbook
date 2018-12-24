@@ -8,7 +8,7 @@ public class A1 {
 	private int age;
 
 	public A1(){input();}
-	public void printAge() {
+	public void printA1() {
 		System.out.printf("당신의 나이는 %d살 입니다.\n", getAge());
 	}	
 
