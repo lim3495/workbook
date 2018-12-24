@@ -21,7 +21,7 @@ public class B5 {
 
 	int output() {
 		seconds = days*24*60*60;
-		m_count = seconds / 100000;
+		m_count = seconds / 1000000;
 		return this.seconds;
 	}
 
