@@ -52,9 +52,11 @@ public class StepBManager {
 			case 8:
 				B8 b8 = new B8();
 				b8.printB8();
+				break;
 			case 9:
 				B9 b9 = new B9();
 				b9.printB9();
+				break;
 			}
 		}
 

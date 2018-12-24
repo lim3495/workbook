@@ -27,7 +27,7 @@ public class B7 {
 		if(usb2.equalsIgnoreCase("Y"))
 			time = (int)(bytes / 60000000);
 		else
-			time = (int)bytes / 1500000;
+			time = (int)(bytes / 1500000);
 
 		return this.time;
 	}
