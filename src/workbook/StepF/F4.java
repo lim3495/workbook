@@ -37,7 +37,7 @@ public class F4 {
 	public void printF4() {
 		
 		for(int i=0 ; i<5; i++) {
-			System.out.println((i+1)+"번 학생의 총점은"+sum[i]+"이고, 평균은"+average[i]+"입니다.");
+			System.out.printf((i+1)+"번 학생의 총점은"+sum[i]+"이고, 평균은 %.1f입니다.\n",average[i]);
 		}
 		
 	}
