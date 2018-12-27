@@ -5,7 +5,8 @@ import java.util.Scanner;
 public class D5 {
 	
 	private int width, height;
-	private int count1,count2,count3,count4,count5;
+	private int count[] = new int[5];
+	private String s[] = {"[정사각형]","[좌우로 길쭉한 직사각형]","[위아래로 길쭉한 직사각형]","[일반적인 가로형 직사각형]","[일반적인 세로형 직사각형]"};
 	
 	public D5() {
 		input();
@@ -29,19 +30,18 @@ public class D5 {
 	
 	void test_square() {
 		
-		if(width == height) count1++;
-		else if(width >= height*2) count2++;
-		else if(width*2 <= height) count3++;
-		else if(width > height) count4++;
-		else if(width < height) count5++;
+		if(width == height) count[0]++;
+		else if(width >= height*2) count[1]++;
+		else if(width*2 <= height) count[2]++;
+		else if(width > height) count[3]++;
+		else if(width < height) count[4]++;
 	}
 	
 	public void printD5() {
-		System.out.println("[정사각형]의 개수는"+count1+"입니다.\n");
-		System.out.println("[좌우로 길쭉한 직사각형]의 개수는"+count2+"입니다.\n");
-		System.out.println("[위아래로 길쭉한 직사각형]의 개수는"+count3+"입니다.\n");
-		System.out.println("[일반적인 가로형 직사각형]의 개수는"+count4+"입니다.\n");
-		System.out.println("[일반적인 세로형 직사각형]의 개수는"+count5+"입니다.\n");
+		for(int i=0 ; i<5;i++) {
+			System.out.println(s[i]+"의 개수는"+count[i]+"입니다.\n");
+		}
+		
 	}
 
 }
