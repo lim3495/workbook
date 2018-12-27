@@ -33,7 +33,7 @@ public class D3 {
 	
 	void average() {
 		
-		average = (double)(totalsum / count) ; 
+		average = ((double)totalsum / (double)count) ; 
 
 	}
 	
