@@ -8,6 +8,7 @@ public class F3 {
 	private int sum[] = new int[3];
 	private double average[] = new double[3];
 	private int kor,eng,mat;
+	private String s[] = {"국어","영어","수학"};
 	
 	public F3() {
 		input();
@@ -34,11 +35,9 @@ public class F3 {
 	} //input
 	
 	public void printF3() {
-		
-		System.out.println("국어의 총점은 "+sum[0]+"이고, 평균은 "+average[0]+"입니다.\n");
-		System.out.println("영어의 총점은 "+sum[1]+"이고, 평균은 "+average[1]+"입니다.\n");
-		System.out.println("수학의 총점은 "+sum[2]+"이고, 평균은 "+average[2]+"입니다.\n");
-		
+		for(int i=0;i<3;i++) {
+		System.out.println(s[i]+"의 총점은 "+sum[0]+"이고, 평균은 "+average[0]+"입니다.\n");
+		}
 	}
 	
 	void get_sum() {
