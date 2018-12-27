@@ -36,7 +36,7 @@ public class F3 {
 	
 	public void printF3() {
 		for(int i=0;i<3;i++) {
-		System.out.println(s[i]+"의 총점은 "+sum[0]+"이고, 평균은 "+average[0]+"입니다.\n");
+		System.out.println(s[i]+"의 총점은 "+sum[i]+"이고, 평균은 "+average[i]+"입니다.\n");
 		}
 	}
 	
