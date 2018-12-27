@@ -18,18 +18,10 @@ public class E5 {
 	public void printE5() {
 		int i,j;
 		if(mode ==1) {
-			for(i=3 ; i<10 ; i+=2) {
-				for(j=1 ; j<10 ; j++) {
-					System.out.print(i+" x "+j+" = "+i*j);
-					System.out.print(" ");
-					if(j%column==0)
-						System.out.println();
-				}
-				System.out.println();
-			}
+			mode=3;
 		}
 		else {
-			for(i=2 ; i<10 ; i+=2) {
+			for(i= mode; i<10 ; i+=2) {
 				for(j=1 ; j<10 ; j++) {
 					System.out.print(i+" x "+j+" = "+i*j);
 					System.out.print(" ");

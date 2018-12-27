@@ -15,19 +15,11 @@ public class E4 {
 	}
 	public void printE4() {
 		int i,j;
-		if(mode ==1) {
-			for(i=3 ; i<10 ; i+=2) {
-				for(j=1 ; j<10 ; j++) {
-					System.out.print(i+" x "+j+" = "+i*j);
-					System.out.print(" ");
-					if(j%3==0)
-						System.out.println();
-				}
-				System.out.println();
-			}
-		}
+		if(mode ==1) 
+			mode=3;
+			
 		else {
-			for(i=2 ; i<10 ; i+=2) {
+			for(i=mode ; i<10 ; i+=2) {
 				for(j=1 ; j<10 ; j++) {
 					System.out.print(i+" x "+j+" = "+i*j);
 					System.out.print(" ");
