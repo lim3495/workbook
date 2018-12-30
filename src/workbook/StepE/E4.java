@@ -18,7 +18,7 @@ public class E4 {
 		if(mode ==1) 
 			mode=3;
 			
-		else {
+	
 			for(i=mode ; i<10 ; i+=2) {
 				for(j=1 ; j<10 ; j++) {
 					System.out.print(i+" x "+j+" = "+i*j);
@@ -30,7 +30,7 @@ public class E4 {
 				System.out.println();
 			}
 			
-		}
+		
 	}
 	
 }
