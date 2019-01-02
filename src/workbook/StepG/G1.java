@@ -19,7 +19,7 @@ public class G1 {
 		
 		for(int i=0;i<100;i++){
 		
-		System.out.println((i+1+"번째 사람의 태어난 년도를 입력하시오."));
+		System.out.println((i+1)+"번째 사람의 태어난 년도를 입력하시오.");
 		birth_year = s.nextInt();
 		
 		if(birth_year > 2012) break;
@@ -28,10 +28,16 @@ public class G1 {
 		count++;
 		
 		}
-		age_cal();
+		
+
+		for(int i=0 ; i<count ; i++) {
+			age_count[age_cal(age[i])]++;
+		}
+
 	}
 	
 	public void printG1() {
+	
 		for(int i=0 ; i<count ; i++) {
 			System.out.println((i+1)+"번째 사람의 나이는"+age[i]+"입니다.");
 		}
@@ -42,25 +48,22 @@ public class G1 {
 	
 	}
 	
-	void age_cal() {
+	int age_cal(int age) {
 		
-		for(int i = 0 ; i< count ; i++)
-		{
-			if(age[i] <6) 
-				age_count[0]++;
-			else if(age[i] >= 7 && age[i] <13) 
-				age_count[1]++;
-			else if(age[i] >= 13 && age[i] <20)
-				age_count[2]++;
-			else if(age[i] >= 20 && age[i] <30) 
-				age_count[3]++;
-			else if(age[i] >= 30 && age[i] <60) 
-				age_count[4]++;
+		
+			if (age<7 )
+				return 0;
+			else if(age >= 7 && age <13) 
+				return 1;
+			else if(age >= 13 && age <20)
+				return 2;
+			else if(age >= 20 && age <30) 
+				return 3;
+			else if(age >= 30 && age <60) 
+				return 4;
 			else 
-				age_count[5]++;
+				return 5;
 			
-		}
-		
 		
 		
 	}
