@@ -7,7 +7,7 @@ public class F3 {
 	private int jumsu[][] = new int[5][3];
 	private int sum[] = new int[3];
 	private double average[] = new double[3];
-	private int kor,eng,mat;
+	private int sub[] = new int[3];
 	private String s[] = {"국어","영어","수학"};
 	
 	public F3() {
@@ -18,15 +18,14 @@ public class F3 {
 		
 		Scanner s = new Scanner(System.in);
 		for(int i=0;i<5;i++) {
-				System.out.println((i+1)+"번 학생 국어,영어,수학 점수를 입력하시오.");
+			System.out.println((i+1)+"번 학생 국어,영어,수학 점수를 입력하시오.");
+			for(int j=0 ; j<3 ; j++) {
 				
-				kor = s.nextInt();
-				eng = s.nextInt();
-				mat = s.nextInt();
 				
-				jumsu[i][0] = kor;
-				jumsu[i][1] = eng;
-				jumsu[i][2] = mat;	
+				sub[j] = s.nextInt();	
+				jumsu[i][j] = sub[j];
+	
+			}
 		}
 		
 		get_sum();

@@ -6,12 +6,13 @@ public class F1 {
 	private int num[] = new int[10];
 	private int first,second;
 	private int second_max_index;
-	private int newnum;
+
 	
 	public F1() {
 		input();
 	}
 	void input() {
+		int newnum;
 	
 		Scanner s = new Scanner(System.in);
 		
