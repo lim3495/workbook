@@ -10,6 +10,7 @@ import workbook.StepG.StepGManager;
 import workbook.StepH.StepHManager;
 import workbook.StepI.StepIManager;
 import workbook.StepJ.StepJManager;
+import workbook.StepK.StepKManager;
 
 
 public class WBManager {
@@ -69,5 +70,13 @@ public class WBManager {
         	System.out.printf("종료되었습니다.\n");
     	  
       }
+      
+      else if(step.equalsIgnoreCase("K")) {
+    	  new StepKManager();
+        	System.out.printf("종료되었습니다.\n");
+    	  
+      }
+      
+      
    }   
 }
