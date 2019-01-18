@@ -12,12 +12,15 @@ import workbook.StepI.StepIManager;
 import workbook.StepJ.StepJManager;
 import workbook.StepK.StepKManager;
 import workbook.StepL.StepLManager;
+import workbook.StepM.StepMManager;
+
+import java.io.IOException;
 import java.text.ParseException;
 
 
 public class WBManager {
 
-   public static void main(String[] args) throws ParseException {
+   public static void main(String[] args) throws ParseException , IOException {
       // TODO Auto-generated method stub
       Scanner s = new Scanner(System.in);
       System.out.print("원하는 Step은?");
@@ -85,6 +88,11 @@ public class WBManager {
     	  
       }
       
+      else if(step.equalsIgnoreCase("M")) {
+    	  	new StepMManager();
+        	System.out.printf("종료되었습니다.\n");
+    	  
+      }
       
    }   
 }
